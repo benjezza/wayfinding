@@ -1,0 +1,503 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Wayfinding by ucdavis</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+
+      section {
+        width: 600px;
+      }
+
+      a img {
+        border: none;
+      }
+
+      #controls {
+        display: block;
+        height: 50px;
+        width: 600px;
+        background-color: lightGrey;
+        z-index:-1;
+        padding: 10px 0 0 10px;
+      }
+
+      #myMaps {
+        height: 480px;
+        width: 785px;
+      }
+
+      #myMaps div {
+        display: inline-block;
+        height: 480px;
+        width: 600px;
+      }
+
+      #mapLoading {
+        font-size: 10em;
+        z-index: -1;
+      }
+
+      .wayfindingRoom {
+        fill: #ffc;
+        stroke: blue;
+        stroke-width: 2;
+        stroke-dasharray: 5 3
+      }
+
+    </style>
+  </head>
+  <body cz-shortcut-listen="true">
+    <div class="wrapper">
+      <header>
+        <h1>Wayfinding</h1>
+        <p>jQuery plugin for interactive svg maps</p>
+
+        <p class="view"><a href="https://github.com/ucdavis/wayfinding">View the Project on GitHub <small>ucdavis/wayfinding</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ucdavis/wayfinding/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ucdavis/wayfinding/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ucdavis/wayfinding">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>wayfinding</h3>
+        <p>Developed at the School of Law: <a href="https://law.ucdavis.edu/information-technology/projects/wayfinding.html">https://law.ucdavis.edu/information-technology/projects/wayfinding.html</a></p>
+        <div id="content">
+          
+          <div id="myMaps">
+          <div id="floor1" style="display: inline-block;"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="480px" viewBox="0 0 600 480" enable-background="new 0 0 600 480" xml:space="preserve">
+<g id="Base">
+	<polygon id="Circulation" fill="#F2F2F2" stroke="#000000" stroke-width="2" points="72,75 531,75 531,408 324,408 324,426 
+		279,426 279,408 72,408 	"></polygon>
+	<rect id="Elevator" x="279" y="228" fill="#B3B3B3" stroke="#000000" width="45" height="36"></rect>
+	<polygon id="Reception" fill="#C69C6D" stroke="#000000" points="288,345 291.857,345 291.857,349.5 311.143,349.5 311.143,345 
+		315,345 315,354 288,354 	"></polygon>
+	<g id="Stairs_1_">
+		<polygon id="Stairs" fill="#B3B3B3" stroke="#000000" points="324,318 306,318 306,282 297,282 297,318 279,318 279,264 324,264 
+					"></polygon>
+		<line fill="none" stroke="#000000" x1="306" y1="309" x2="324" y2="309"></line>
+		<line fill="none" stroke="#000000" x1="306" y1="300" x2="324" y2="300"></line>
+		<line fill="none" stroke="#000000" x1="306" y1="291" x2="324" y2="291"></line>
+		<line fill="none" stroke="#000000" x1="306" y1="282" x2="324" y2="282"></line>
+		<polyline stroke="#000000" points="288,273 288,309 283.5,300 292.5,300 288,309 		"></polyline>
+	</g>
+</g>
+<g id="Rooms">
+	<a id="lobby" xlink:href="#">
+		<g>
+			<rect x="279.5" y="399.5" fill="#E6E6E6" width="44" height="26"></rect>
+			<path d="M323,400v25h-43v-25H323 M324,399h-45v27h45V399L324,399z"></path>
+		</g>
+	</a>
+	<a id="R101" xlink:href="#">
+		<g class="wayfindingRoom">
+			<path fill="#E6E6E6" d="M108.5,371.5v-26.028c1.959-0.17,9-1.346,9-9.472v-0.5h-9v-35h71v71H108.5z"></path>
+			<path d="M179,301v70h-70v-25.081c2.533-0.322,9-1.929,9-9.919v-1h-1h-7.875H109v-34H179 M180,300h-72v36c0,0,0,0,9,0c0,9-9,9-9,9
+				v27h72V300L180,300z"></path>
+		</g>
+	</a>
+	<a id="R102" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M108.5,299.5v-26.028c1.959-0.17,9-1.346,9-9.472v-0.5h-9v-35h71v71H108.5z"></path>
+			<path d="M179,229v70h-70v-25.081c2.533-0.322,9-1.929,9-9.919v-1h-1h-7.875H109v-34H179 M180,228h-72v36c0,0,0,0,9,0c0,9-9,9-9,9
+				v27h72V228L180,228z"></path>
+		</g>
+	</a>
+	<a id="R103" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M180.5,299.5v-71h71v26.028c-1.959,0.17-9,1.346-9,9.472v0.5h9v35H180.5z"></path>
+			<path d="M251,229v25.081c-2.533,0.322-9,1.929-9,9.919v1h1h7.875H251v34h-70v-70H251 M252,228h-72v72h72v-36c0,0,0,0-9,0
+				c0-9,9-9,9-9V228L252,228z"></path>
+		</g>
+	</a>
+	<a id="R104" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M180.5,371.5v-71h71v26.028c-1.959,0.17-9,1.346-9,9.472v0.5h9v35H180.5z"></path>
+			<path d="M251,301v25.081c-2.533,0.322-9,1.929-9,9.919v1h1h7.875H251v34h-70v-70H251 M252,300h-72v72h72v-36c0,0,0,0-9,0
+				c0-9,9-9,9-9V300L252,300z"></path>
+		</g>
+	</a>
+	<a id="R111" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M351.5,371.5v-26.028c1.959-0.17,9-1.346,9-9.472v-0.5h-9v-35h71v71H351.5z"></path>
+			<path d="M422,301v70h-70v-25.081c2.533-0.322,9-1.929,9-9.919v-1h-1h-7.875H352v-34H422 M423,300h-72v36c0,0,0,0,9,0c0,9-9,9-9,9
+				v27h72V300L423,300z"></path>
+		</g>
+	</a>
+	<a id="R112" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M351.5,299.5v-26.028c1.959-0.17,9-1.346,9-9.472v-0.5h-9v-35h71v71H351.5z"></path>
+			<path d="M422,229v70h-70v-25.081c2.533-0.322,9-1.929,9-9.919v-1h-1h-7.875H352v-34H422 M423,228h-72v36c0,0,0,0,9,0c0,9-9,9-9,9
+				v27h72V228L423,228z"></path>
+		</g>
+	</a>
+	<a id="R113" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M423.5,299.5v-71h71v26.028c-1.959,0.17-9,1.346-9,9.472v0.5h9v35H423.5z"></path>
+			<path d="M494,229v25.081c-2.533,0.322-9,1.929-9,9.919v1h1h7.875H494v34h-70v-70H494 M495,228h-72v72h72v-36c0,0,0,0-9,0
+				c0-9,9-9,9-9V228L495,228z"></path>
+		</g>
+	</a>
+	<a id="R114" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M423.5,371.5v-71h71v26.028c-1.959,0.17-9,1.346-9,9.472v0.5h9v35H423.5z"></path>
+			<path d="M494,301v25.081c-2.533,0.322-9,1.929-9,9.919v1h1h7.875H494v34h-70v-70H494 M495,300h-72v72h72v-36c0,0,0,0-9,0
+				c0-9,9-9,9-9V300L495,300z"></path>
+		</g>
+	</a>
+	<a id="R121" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M108.5,182.5v-26.028c1.959-0.169,9-1.346,9-9.472v-0.5h-9v-35h71v71H108.5z"></path>
+			<path d="M179,112v70h-70v-25.081c2.533-0.323,9-1.93,9-9.919v-1h-1h-7.875H109v-34H179 M180,111h-72v36c0,0,0,0,9,0c0,9-9,9-9,9
+				v27h72V111L180,111z"></path>
+		</g>
+	</a>
+	<a id="R122" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M180.5,182.5v-71h26.028c0.169,1.959,1.346,9,9.472,9h0.5v-9h35v71H180.5z"></path>
+			<path d="M251,112v70h-70v-70h25.081c0.323,2.533,1.93,9,9.919,9h1v-1v-7.875V112H251 M252,111h-36c0,0,0,0,0,9c-9,0-9-9-9-9h-27
+				v72h72V111L252,111z"></path>
+		</g>
+	</a>
+	<a id="R123" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M342.5,182.5v-9H342c-8.126,0-9.302,7.041-9.472,9h-62.057c-0.169-1.959-1.346-9-9.472-9h-0.5v9h-8v-71h8
+				v9h0.5c8.125,0,9.302-7.041,9.472-9h62.057c0.17,1.959,1.346,9,9.472,9h0.5v-9h8v71H342.5z"></path>
+			<path d="M350,112v70h-7v-0.125V174v-1h-1c-7.99,0-9.597,6.467-9.919,9h-61.162c-0.323-2.533-1.93-9-9.919-9h-1v1v7.875V182h-7
+				v-70h7v0.125V120v1h1c7.99,0,9.597-6.467,9.919-9h61.162c0.322,2.533,1.929,9,9.919,9h1v-1v-7.875V112H350 M351,111h-9
+				c0,0,0,0,0,9c-9,0-9-9-9-9h-63c0,0,0,9-9,9c0-9,0-9,0-9h-9v72h9c0,0,0,0,0-9c9,0,9,9,9,9h63c0,0,0-9,9-9c0,9,0,9,0,9h9V111
+				L351,111z"></path>
+		</g>
+	</a>
+	<a id="R124" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M351.5,182.5v-71h26.028c0.17,1.959,1.346,9,9.472,9h0.5v-9h35v71H351.5z"></path>
+			<path d="M422,112v70h-70v-70h25.081c0.322,2.533,1.929,9,9.919,9h1v-1v-7.875V112H422 M423,111h-36c0,0,0,0,0,9c-9,0-9-9-9-9h-27
+				v72h72V111L423,111z"></path>
+		</g>
+	</a>
+	<a id="R125" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M423.5,182.5v-71h71v26.028c-1.959,0.169-9,1.346-9,9.472v0.5h9v35H423.5z"></path>
+			<path d="M494,112v25.081c-2.533,0.323-9,1.93-9,9.919v1h1h7.875H494v34h-70v-70H494 M495,111h-72v72h72v-36c0,0,0,0-9,0
+				c0-9,9-9,9-9V111L495,111z"></path>
+		</g>
+	</a>
+</g>
+<g id="Portals">
+	<line id="Elev.1.floor2" fill="none" stroke="#FF00FF" x1="297" y1="237" x2="315" y2="255" stroke-opacity="0"></line>
+	<line id="Stair.1.floor2" fill="none" stroke="#FF00FF" x1="297" y1="273" x2="288" y2="273" stroke-opacity="0"></line>
+</g>
+<g id="Doors">
+	<line id="lobby" fill="none" stroke="#00FF00" x1="297" y1="408" x2="306" y2="417" stroke-opacity="0"></line>
+	<line id="R121" fill="none" stroke="#00FF00" x1="117" y1="156" x2="126" y2="165" stroke-opacity="0"></line>
+	<line id="R122" fill="none" stroke="#00FF00" x1="207" y1="120" x2="198" y2="129" stroke-opacity="0"></line>
+	<line id="R123" fill="none" stroke="#00FF00" x1="270" y1="120" x2="279" y2="129" stroke-opacity="0"></line>
+	<line id="R123" fill="none" stroke="#00FF00" x1="270" y1="174" x2="279" y2="165" stroke-opacity="0"></line>
+	<line id="R123" fill="none" stroke="#00FF00" x1="333" y1="120" x2="324" y2="129" stroke-opacity="0"></line>
+	<line id="R123" fill="none" stroke="#00FF00" x1="333" y1="174" x2="324" y2="165" stroke-opacity="0"></line>
+	<line id="R104" fill="none" stroke="#00FF00" x1="243" y1="327" x2="234" y2="318" stroke-opacity="0"></line>
+	<line id="R103" fill="none" stroke="#00FF00" x1="243" y1="255" x2="234" y2="246" stroke-opacity="0"></line>
+	<line id="R112" fill="none" stroke="#00FF00" x1="360" y1="273" x2="369" y2="282" stroke-opacity="0"></line>
+	<line id="R111" fill="none" stroke="#00FF00" x1="360" y1="345" x2="369" y2="354" stroke-opacity="0"></line>
+	<line id="R102" fill="none" stroke="#00FF00" x1="117" y1="273" x2="126" y2="282" stroke-opacity="0"></line>
+	<line id="R101" fill="none" stroke="#00FF00" x1="117" y1="345" x2="126" y2="354" stroke-opacity="0"></line>
+	<line id="R113" fill="none" stroke="#00FF00" x1="486" y1="255" x2="477" y2="246" stroke-opacity="0"></line>
+	<line id="R114" fill="none" stroke="#00FF00" x1="486" y1="327" x2="477" y2="318" stroke-opacity="0"></line>
+	<line id="R125" fill="none" stroke="#00FF00" x1="486" y1="138" x2="477" y2="129" stroke-opacity="0"></line>
+	<line id="R124" fill="none" stroke="#00FF00" x1="378" y1="120" x2="369" y2="129" stroke-opacity="0"></line>
+	<line id="lcd.1" fill="none" stroke="#00FF00" x1="297" y1="354" x2="288" y2="363" stroke-opacity="0"></line>
+</g>
+<g id="Paths">
+	<line fill="none" stroke="#00FFFF" x1="297" y1="273" x2="315" y2="273" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="264" x2="342" y2="336" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="336" x2="261" y2="264" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="264" x2="243" y2="255" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="408" x2="297" y2="381" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="381" x2="261" y2="381" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="336" x2="99" y2="381" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="381" x2="261" y2="381" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="381" x2="261" y2="336" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="354" x2="297" y2="381" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="333" y1="174" x2="333" y2="120" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="333" y1="120" x2="342" y2="102" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="336" x2="243" y2="327" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="336" x2="360" y2="345" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="264" x2="360" y2="273" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="192" x2="261" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="192" x2="270" y2="174" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="192" x2="333" y2="174" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="237" x2="297" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="219" x2="261" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="219" x2="261" y2="264" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="219" x2="342" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="219" x2="342" y2="264" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="336" x2="315" y2="336" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="336" x2="315" y2="336" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="315" y1="273" x2="315" y2="336" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="192" x2="261" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="192" x2="342" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="264" x2="99" y2="336" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="336" x2="117" y2="345" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="264" x2="117" y2="273" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="147" x2="99" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="147" x2="117" y2="156" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="192" x2="261" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="264" x2="99" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="219" x2="261" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="192" x2="99" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="102" x2="261" y2="102" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="102" x2="270" y2="120" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="102" x2="216" y2="102" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="216" y1="102" x2="207" y2="120" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="216" y1="102" x2="99" y2="102" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="102" x2="99" y2="147" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="261" y1="192" x2="99" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="99" y1="219" x2="261" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="102" x2="387" y2="102" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="387" y1="102" x2="378" y2="120" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="387" y1="102" x2="504" y2="102" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="102" x2="504" y2="147" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="147" x2="486" y2="138" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="147" x2="504" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="192" x2="342" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="219" x2="504" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="219" x2="504" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="219" x2="342" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="219" x2="504" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="219" x2="504" y2="264" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="264" x2="486" y2="255" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="264" x2="504" y2="336" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="336" x2="486" y2="327" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="336" x2="504" y2="381" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="504" y1="381" x2="342" y2="381" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="381" x2="342" y2="336" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="342" y1="381" x2="297" y2="381" stroke-opacity="0"></line>
+</g>
+<path d="M297,408L297,389Q297,381 289,381L107,381Q99,381 99,373L99,344Q99,336 106.15541752799933,339.5777087639997L117,345" style="fill: none; stroke: cyan; stroke-width: 3px; transition: stroke-dashoffset 2321ms linear 0s; stroke-dasharray: 290.125px, 290.125px; stroke-dashoffset: 0px;" class="directionPath0"></path></svg>
+</div><div id="floor2" style="display: none;"><!--?xml version="1.0" encoding="utf-8"?-->
+<!-- Generator: Adobe Illustrator 14.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 43363)  -->
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="480px" viewBox="0 0 600 480" enable-background="new 0 0 600 480" xml:space="preserve">
+<g id="Base">
+	<polygon id="Circulation" fill="#F2F2F2" stroke="#000000" stroke-width="2" points="72,75 531,75 531,408 324,408 324,426 
+		279,426 279,408 72,408 	"></polygon>
+	<rect id="Elevator" x="279" y="228" fill="#B3B3B3" stroke="#000000" width="45" height="36"></rect>
+	<g id="Stairs_1_">
+		<polygon id="Stairs" fill="#B3B3B3" stroke="#000000" points="279,318 297,318 297,282 306,282 306,318 324,318 324,264 279,264 
+					"></polygon>
+		<line fill="none" stroke="#000000" x1="297" y1="309" x2="279" y2="309"></line>
+		<line fill="none" stroke="#000000" x1="297" y1="300" x2="279" y2="300"></line>
+		<line fill="none" stroke="#000000" x1="297" y1="291" x2="279" y2="291"></line>
+		<line fill="none" stroke="#000000" x1="297" y1="282" x2="279" y2="282"></line>
+		<polyline stroke="#000000" points="315,273 315,309 319.5,300 310.5,300 315,309 		"></polyline>
+	</g>
+	<g id="Maze">
+		<line fill="none" stroke="#000000" x1="477" y1="75" x2="477" y2="129"></line>
+		<line fill="none" stroke="#000000" x1="477" y1="129" x2="486" y2="129"></line>
+		<line fill="none" stroke="#000000" x1="504" y1="129" x2="531" y2="129"></line>
+		<line fill="none" stroke="#000000" x1="513" y1="156" x2="459" y2="156"></line>
+		<line fill="none" stroke="#000000" x1="423" y1="75" x2="423" y2="237"></line>
+		<line fill="none" stroke="#000000" x1="423" y1="237" x2="513" y2="237"></line>
+		<line fill="none" stroke="#000000" x1="495" y1="219" x2="495" y2="183"></line>
+		<line fill="none" stroke="#000000" x1="495" y1="183" x2="441" y2="183"></line>
+		<line fill="none" stroke="#000000" x1="441" y1="183" x2="441" y2="93"></line>
+		<line fill="none" stroke="#000000" x1="495" y1="183" x2="495" y2="174"></line>
+		<line fill="none" stroke="#000000" x1="495" y1="174" x2="531" y2="174"></line>
+		<line fill="none" stroke="#000000" x1="513" y1="219" x2="531" y2="219"></line>
+		<line fill="none" stroke="#000000" x1="531" y1="255" x2="405" y2="255"></line>
+		<line fill="none" stroke="#000000" x1="405" y1="255" x2="405" y2="93"></line>
+		<line fill="none" stroke="#000000" x1="477" y1="237" x2="477" y2="201"></line>
+		<line fill="none" stroke="#000000" x1="477" y1="201" x2="441" y2="201"></line>
+		<line fill="none" stroke="#000000" x1="486" y1="129" x2="486" y2="156"></line>
+	</g>
+</g>
+<g id="Rooms">
+	<a id="R201" xlink:href="#">
+		<g>
+			<rect x="279.5" y="399.5" fill="#E6E6E6" width="44" height="26"></rect>
+			<path d="M323,400v25h-43v-25H323 M324,399h-45v27h45V399L324,399z"></path>
+		</g>
+	</a>
+	<a id="R202" xlink:href="#">
+		<g>
+			<path fill="#E6E6E6" d="M504.472,119.5c-0.17-1.959-1.346-9-9.472-9h-0.5v9h-8v-35h35v35H504.472z"></path>
+			<path d="M521,85v34h-16.081c-0.322-2.533-1.929-9-9.919-9h-1v1v7.875V119h-7V85H521 M522,84h-36v36h9c0,0,0,0,0-9c9,0,9,9,9,9h18
+				V84L522,84z"></path>
+		</g>
+	</a>
+</g>
+<g id="Portals">
+	<line id="Elev.1.floor1" fill="none" stroke="#FF00FF" x1="297" y1="237" x2="315" y2="255" stroke-opacity="0"></line>
+	<line id="Stair.1.floor1" fill="none" stroke="#FF00FF" x1="315" y1="273" x2="306" y2="273" stroke-opacity="0"></line>
+</g>
+<g id="Doors">
+	<line id="R201" fill="none" stroke="#00FF00" x1="297" y1="408" x2="306" y2="417" stroke-opacity="0"></line>
+	<line id="R202" fill="none" stroke="#00FF00" x1="504" y1="111" x2="513" y2="102" stroke-opacity="0"></line>
+</g>
+<g id="Paths">
+	<line fill="none" stroke="#00FFFF" x1="297" y1="408" x2="297" y2="381" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="237" x2="297" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="219" x2="333" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="333" y1="219" x2="333" y2="327" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="288" y1="327" x2="288" y2="273" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="288" y1="273" x2="306" y2="273" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="219" x2="270" y2="219" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="270" y1="219" x2="270" y2="327" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="270" y1="327" x2="288" y2="327" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="288" y1="327" x2="297" y2="327" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="327" x2="297" y2="381" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="333" y1="327" x2="297" y2="327" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="495" y1="129" x2="495" y2="147" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="495" y1="129" x2="504" y2="111" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="495" y1="147" x2="522" y2="147" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="522" y1="147" x2="522" y2="165" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="522" y1="165" x2="450" y2="165" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="450" y1="165" x2="450" y2="84" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="450" y1="84" x2="432" y2="84" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="432" y1="84" x2="432" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="432" y1="192" x2="486" y2="192" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="486" y1="192" x2="486" y2="228" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="486" y1="228" x2="522" y2="228" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="522" y1="228" x2="522" y2="246" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="522" y1="246" x2="414" y2="246" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="414" y1="246" x2="414" y2="84" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="414" y1="84" x2="297" y2="84" stroke-opacity="0"></line>
+	<line fill="none" stroke="#00FFFF" x1="297" y1="84" x2="297" y2="219" stroke-opacity="0"></line>
+</g>
+</svg>
+</div></div>
+          <div id="controls">
+            <label>Show</label>
+            <button id="floor1">1st Floor</button>
+            <button id="floor2">2nd Floor</button>
+            <label for="beginSelect">Begin Route at</label>
+            <select id="beginSelect">
+              <option value="lcd.1">Reception</option>
+              <option value="lobby">Lobby</option>
+              <option value="R123">Conf Room</option>
+            </select>
+            <label for="endSelect">Show Route to</label>
+            <select id="endSelect">
+              <option></option>
+              <option disabled="true">West 1st</option>
+              <option value="R101">101</option>
+              <option value="R102">102</option>
+              <option value="R103">103</option>
+              <option value="R104">104</option>
+              <option disabled="true">East 1st</option>
+              <option value="R111">111</option>
+              <option value="R112">112</option>
+              <option value="R113">113</option>
+              <option value="R114">114</option>
+              <option disabled="true">North 1st</option>
+              <option value="R121">121</option>
+              <option value="R122">122</option>
+              <option value="R123">123</option>
+              <option value="R124">124</option>
+              <option value="R125">125</option>
+              <option disabled="true">2nd</option>
+              <option value="R201">201</option>
+              <option value="R202">202</option>
+            </select>
+            <label for="accessible">Accessible</label>
+            <input id="accessible" type="checkbox" name="accessible" value="Accessible">
+          </div>
+          <p>Works with Chrome, Firefox, and Opera. IE will show path, but is not animating the path.</p>
+      		<p>This is a demonstration of a wayfinding system for providing routing within a building. It allows the entire map data to be stored in a single .svg file from which it displays a map and extracts the information about which routes are available. A change in the .svg file will be enough to change routing results.</p>
+      		<h2>Things to try</h2>
+      		<ul>
+      			<li>Click any room and it will trigger the routing. We will be using this with a touch screen lcd at key points in our building.</li>
+      			<li>In addition to clicking on a room it is possible to trigger routing using the "Show Route to" dropdown or through JavaScript.</li>
+      			<li>Route to room 201 and try it with the Accessible option on and off an you will see that the accessible route takes the elevator rather than the stairs even though the path is longer. Accessible routing will be extended to allow certain path segments to be considered accessible or not.</li>
+      			<li>Change the "Begin Route at" selection and it will remember the last destination and reroute.</li>
+      			<li>Click the <a href="#" onclick="javascript:$('#myMaps').wayfinding('routeTo', 'R122');">second room from the left</a> on the top row on the first floor and note that it routes through the right hand side of the room next to it. The left hand side is set not to pass traffic. You can choose which routes to enable.</li>
+      			<li>
+      				<a href="#" onclick="javascript:$('#Paths line').attr('stroke-opacity', 1);">Show paths</a>.
+      				<a href="#" onclick="javascript:$('#Paths line').attr('stroke-opacity', 0);">Hide paths</a>.
+      				<a href="#" onclick="javascript:$('#Portals line').attr('stroke-opacity', 1);">Show portals</a>.
+      				<a href="#" onclick="javascript:$('#Portals line').attr('stroke-opacity', 0);">Hide portals</a>.
+      				<a href="#" onclick="javascript:$('#Doors line').attr('stroke-opacity', 1);">Show doors</a>.
+      				<a href="#" onclick="javascript:$('#Doors line').attr('stroke-opacity', 0);">Hide doors</a>.
+      			</li>
+      			<li>one way paths - work in progress</li>
+      			<li>portal lengths as route consideration - work in progress</li>
+      			<li>$('#myMaps').wayfinding('checkMap') make into clickable report into report div</li>
+      			<li>in addition to checkMap, add a dump parse, consider a load parse from JSON</li>
+      		</ul>
+        </div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ucdavis">ucdavis</a></p>
+        <p><small>Hosted on GitHub Pages — Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="javascripts/jquery.wayfinding.js"></script>
+    <script type="text/javascript">
+
+    /*jslint white: true, onevar: true, nomen: true, eqeqeq: true, bitwise: true, regexp: true, newcap: true, immed: true, maxerr: 100 */
+
+      $(document).ready(function () {
+        'use strict';
+        $('#myMaps').wayfinding({
+          'maps': [
+            {'path': 'demo_map_1.svg', 'id': 'floor1'},
+            {'path': 'demo_map_2.svg', 'id': 'floor2'}
+          ],
+          'path': {
+            width: 3,
+            color: 'cyan',
+            radius: 8,
+            speed: 8
+          },
+          'startpoint': function() {
+            return 'lcd.1';
+          },
+          'defaultMap': 'floor1'
+        });
+
+        //make the three buttons clickable
+        $('#controls button').click(function () {
+          $('#myMaps').wayfinding('currentMap',$(this).attr('id'));
+        });
+        $('#controls #beginSelect').change(function () {
+          $("#myMaps").wayfinding('startpoint', $(this).val());
+          if ($('#controls .endSelect').val() !== '') {
+            $('#myMaps').wayfinding('routeTo', $('#controls #endSelect').val());
+          }
+        });
+        $('#controls #endSelect').change(function () {
+          $('#myMaps').wayfinding('routeTo', $(this).val());
+        });
+        $('#controls #accessible').change(function () {
+          if ($('#controls #accessible:checked').val() !== undefined) {
+            $('#myMaps').wayfinding('accessibleRoute', true);
+          } else {
+            $('#myMaps').wayfinding('accessibleRoute', false);
+          }
+          $('#myMaps').wayfinding('routeTo', $("#controls #endSelect").val());
+        });
+
+        $('#Rooms a').on('click', function () {
+          $("#controls #endSelect option[value='" + $(this).attr('id') + "']").attr("selected", true);
+        });
+
+      }); // close document ready
+    </script>
+  
+
+</body></html>
